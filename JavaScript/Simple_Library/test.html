@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="test_style.css">
+</head>
+<body>
+    <h1>Library Books</h1>
+    <div id="lib_wrapper">
+        <div id="lib">
+            <table id="library_table">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                    <th>Removal</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <details class='new_book_form'>
+        <summary>Click here to add a new book!</summary>
+        <div id="new_book">
+            Please fill out the below form!
+            <form id="newBook_form">
+                <input type="text" placeholder="Enter Book Title" name="new_title">
+                <input type="text" placeholder="Enter Author Title" name="new_author">
+                <input type="text" placeholder="How many pages?" name="new_pages">
+                <input type="button" value="Submit New Book" onclick="quickFormSubmit()">
+            </form>
+        </div>
+    </details>
+
+    <script src="library_books.js"></script>
+</body>
